@@ -1523,4 +1523,7 @@ body, html {
     top: 24rem;
     right: 47rem;
   }
+  .front-block {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -50,7 +50,12 @@
                     </div>
                 </div>
             </div>
-            <img src="./media/bg/front-screen.png" alt="front screen bg" class="front-block__bg">
+            <picture class="front-block__bg">
+                <source media="(min-width: 1279px)" srcset="./media/bg/front-screen.png">
+                <source media="(min-width: 0)" srcset="./media/bg/front-screen-mob.png">
+                <img src="./media/bg/front-screen-mob.png" alt="front screen bg" class="front-block__bg">
+            </picture>
+            <!-- <img src="./media/bg/front-screen-mob.png" alt="front screen bg" class="front-block__bg"> -->
         </section>
         <section class="about_us">
             <div class="container">
