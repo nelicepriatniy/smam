@@ -78,7 +78,7 @@ if (quizBlock) {
                                 changeQuizQuestions()
                                 console.log(text);
                             } else {
-                                alert('введите значение')
+                                // alert('введите значение')
                             }
 
                         })
