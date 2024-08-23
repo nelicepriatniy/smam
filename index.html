@@ -24,7 +24,7 @@
             </nav>
             <div class="header-contacts">
                 <a href="" class="header-contacts__phone">8 (3452) 55-13-15</a>
-                <button class="header-contacts__form-btn">Заказать звонок</button>
+                <a href="#sectionForm" class="header-contacts__form-btn">Заказать звонок</a>
             </div>
         </div>
     </header>
@@ -86,8 +86,8 @@
                             Спасибо, что выбираете нас!
                         </p>
                         <div class="about_us__buttons">
-                            <button class="about_us__buttons__form">Оформить заказ</button>
-                            <button class="about_us__buttons__call">Заказать звонок</button>
+                            <a href="#sectionForm" class="about_us__buttons__form">Оформить заказ</a>
+                            <a href="#sectionForm" class="about_us__buttons__call">Заказать звонок</a>
                         </div>
                     </div>
                 </div>
@@ -112,10 +112,10 @@
                         <</div>
                             <div class="projects-slider-next">></div>
                     </div>
-                    <div class="projects__button">Рассчитать стоимость работ</div>
+                    <div class="projects__button quiz-btn">Рассчитать стоимость работ</div>
                 </div>
         </section>
-        <section class="form">
+        <section class="form" id="sectionForm">
             <div class="container">
                 <div class="form-text">
                     <h3 class="form__heading">ВЫЗОВ ЗАМЕРЩИКА</h3>
@@ -184,8 +184,8 @@
                         Заказать изготовление на производстве можно по телефону.
                     </p>
                     <div class="about_us__buttons">
-                        <button class="about_us__buttons__form">Оформить заказ</button>
-                        <button class="about_us__buttons__call">Заказать звонок</button>
+                        <a href="#sectionForm" class="about_us__buttons__form">Оформить заказ</a>
+                        <a href="#sectionForm" class="about_us__buttons__call">Заказать звонок</a>
                     </div>
                 </div>
             </div>
@@ -278,7 +278,7 @@
                     <li class="list_block__list__item">Благодаря собственному производству мы предлагаем <br class="desk"> разумные цены на
                         высококачественную продукцию.</li>
                 </ul>
-                <button class="list_block__button">Заказать</button>
+                <button class="list_block__button quiz-btn">Заказать</button>
             </div>
             <img src="./media/bg/list_block.png" alt="" class="list_block__bg">
         </section>
@@ -296,8 +296,8 @@
                             и качественными брендами, чтобы предложить нашим клиентам лучшие решения.
                         </p>
                         <div class="about_us__buttons">
-                            <button class="about_us__buttons__form">Оформить заказ</button>
-                            <button class="about_us__buttons__call">Заказать звонок</button>
+                            <a href="#sectionForm" class="about_us__buttons__form">Оформить заказ</a>
+                            <a href="#sectionForm" class="about_us__buttons__call">Заказать звонок</a>
                         </div>
                     </div>
                 </div>
@@ -390,8 +390,8 @@
                         <span>Телефон:</span> +7 (919) 948 49-59 <br class="desk"> <span>E-mail:</span> info@smam72.ru
                     </div>
                     <div class="about_us__buttons">
-                        <button class="about_us__buttons__form">Оформить заказ</button>
-                        <button class="about_us__buttons__call">Заказать звонок</button>
+                        <a href="#sectionForm" class="about_us__buttons__form">Оформить заказ</a>
+                        <a href="#sectionForm" class="about_us__buttons__call">Заказать звонок</a>
                     </div>
                 </div>
             </div>
@@ -414,6 +414,269 @@
                 <p class="footer-avtor">Разработка дизайна сайта: Shevchenkodesign +7 (995) 482-48-09</p>
             </div>
         </footer>
+
+        <div class="quiz-modal">
+            <div class="quiz-modal-item active">
+                <div class="quiz-item__heading">Для начала, выберите форму кухни</div>
+                <img src="./media/quiz/main.png" alt="" class="quiz-item__img">
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans" data-prefix="Вид кухни: " data-main-value="Прямая"  data-value="kitchen">Прямая</div>
+                    <div class="quiz-item__ans" data-prefix="Вид кухни: " data-main-value="Угловая"  data-value="kitchen">Угловая</div>
+                    <div class="quiz-item__ans" data-prefix="Вид кухни: " data-main-value="П-образная"  data-value="kitchen">П-образная</div>
+                    <div class="quiz-item__ans" data-prefix="Вид кухни: " data-main-value="С-островом"  data-value="kitchen">С-островом</div>
+                    <div class="quiz-item__ans" data-prefix="Вид кухни: " data-main-value="Расчет шкафа"  data-value="shkaf">Расчет шкафа</div>
+                    <div class="quiz-item__ans another" data-prefix="Вид кухни: " data-main-value="Расчет другой мебели"  data-value="another">Расчет другой мебели</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="another">
+                <div class="quiz-item__heading">Укажите какая мебель Вас интересует?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <input type="text" data-prefix="Мебель, которая интересует: " data-main-value="" class="quiz-item-ans__input second-ans" placeholder="Тумбочка">
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="another">
+                <div class="quiz-item__heading">Есть ли фото кухни которая  Вам нравится или дизайн-проект?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="есть ли фото/дизайн проект : " data-main-value="Есть дизайн-проект">Есть дизайн-проект</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="есть ли фото/дизайн проект : " data-main-value="Есть фото">Есть фото</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="есть ли фото/дизайн проект : " data-main-value="Ещё нет">Ещё нет</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="another">
+                <div class="quiz-item__heading">Когда вы планируете установить кухню?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="сроки установки кухни : " data-main-value="В этом месяце">В этом месяце</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="сроки установки кухни : " data-main-value="В следующем месяце">В следующем месяце</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="сроки установки кухни : " data-main-value="В течение 3 месяцев">В течение 3 месяцев</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="сроки установки кухни : " data-main-value="В течение 6 месяцев">В течение 6 месяцев</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="another">
+                <div class="quiz-item__heading">В какую сумму планируете уложиться?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="сумма : " data-main-value="От 150 т.р. до 200 т.р. ">От 150 т.р. до 200 т.р. </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="сумма : " data-main-value="От 200 т.р. до 250 т.р.">От 200 т.р. до 250 т.р.</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="сумма : " data-main-value="От 250 т.р. до 300 т.р. ">От 250 т.р. до 300 т.р. </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="сумма : " data-main-value="От 300 т.р. до 400 т.р. и выше">От 300 т.р. до 400 т.р. и выше</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="another">
+                <div class="quiz-item__heading">Уже готовим расчет цены для Вас!
+                    Скажите, куда вам прислать расчёт стоимости ?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="куда отправлять : " data-main-value="WhatsApp">WhatsApp</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="куда отправлять : " data-main-value="Telegram">Telegram</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="куда отправлять : " data-main-value="Viber">Viber</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="куда отправлять : " data-main-value="На мобильный телефон">На мобильный телефон</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="kitchen">
+                <div class="quiz-item__heading">Кухню хотите до потолка?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="до потолка кухня : " data-main-value="Да">Да</div>
+                    <div class="quiz-item__ans second-ans another" data-prefix="до потолка кухня : " data-main-value="Нет">Нет</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="kitchen">
+                <div class="quiz-item__heading">Укажите высоту потолка (если не знаете, укажите приблизительно)</div>
+                <div class="quiz-item__ans-wrapper">
+                    <input type="text" data-prefix="Высота кухни: " data-main-value="" class="quiz-item-ans__input second-ans" placeholder=" Укажите размер ">
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="kitchen">
+                <div class="quiz-item__heading">Есть ли фото кухни которая  Вам нравится или дизайн-проект?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="есть ли фото/дизайн проект : " data-main-value="Есть дизайн-проект">Есть дизайн-проект</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="есть ли фото/дизайн проект : " data-main-value="Есть фото">Есть фото</div>
+                    <div class="quiz-item__ans second-ans another" data-prefix="есть ли фото/дизайн проект : " data-main-value="Ещё нет">Ещё нет</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="kitchen">
+                <div class="quiz-item__heading">Из чего планируется фартук 
+                    на вашей кухни?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="из чего делать кухню : " data-main-value="Кафель">Кафель</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="из чего делать кухню : " data-main-value="Стеноваяпанель">Стеновая панель</div>
+                    <div class="quiz-item__ans second-ans another" data-prefix="из чего делать кухню : " data-main-value="Другое">Другое</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="kitchen">
+                <div class="quiz-item__heading">Из чего планируется фартук 
+                    на вашей кухни?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="из чего делать кухню : " data-main-value="Пленка">Пленка</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="из чего делать кухню : " data-main-value="Эмаль">Эмаль</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="из чего делать кухню : " data-main-value="ЛДСП">ЛДСП</div>
+                    <div class="quiz-item__ans second-ans another" data-prefix="из чего делать кухню : " data-main-value="Пока не знаю">Пока не знаю</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="kitchen">
+                <div class="quiz-item__heading">Что планируется из встраиваемой техники?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="из техники : " data-main-value="Холодильник отдельностоящий">Холодильник отдельностоящий</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="из техники : " data-main-value="Холодильник встраиваемый">Холодильник встраиваемый</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="из техники : " data-main-value="Микроволновка">Микроволновка</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="из техники : " data-main-value="Посудомойка на 450 или 600">Посудомойка на 450 или 600</div>
+                    <div class="quiz-item__ans second-ans another" data-prefix="из техники : " data-main-value="Пока не знаю">Пока не знаю</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="kitchen">
+                <div class="quiz-item__heading">Входит ли холодильник?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="встроен ли холодильник : " data-main-value="ДА">ДА</div>
+                    <div class="quiz-item__ans second-ans another" data-prefix="встроен ли холодильник : " data-main-value="Нет">Нет</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">В какое помещение вы собираетесь ставить шкаф?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="В какое помещение шкаф : " data-main-value="Прихожая">Прихожая</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="В какое помещение шкаф : " data-main-value="Гостиная">Гостиная</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="В какое помещение шкаф : " data-main-value="Гардеробная">Гардеробная</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="В какое помещение шкаф : " data-main-value="Спальня">Спальня</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="В какое помещение шкаф : " data-main-value="Детская ">Детская </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="В какое помещение шкаф : " data-main-value="Другое ">Другое </div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Какой шкаф интересует?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="Какой шкаф интересует : " data-main-value="Распашной">Распашной</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Какой шкаф интересует : " data-main-value="Купе">Купе</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Какой тип шкафа вас интересует?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="Какой тип шкафа : " data-main-value="Встроенный">Встроенный</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Какой тип шкафа : " data-main-value="Прямой">Прямой</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Какой тип шкафа : " data-main-value="Отдельностоящий">Отдельностоящий</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Какой тип шкафа : " data-main-value="Угловой">Угловой</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Какой тип шкафа : " data-main-value="Другой">Другой</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Выберите  профиль</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="Профиль шкафа : " data-main-value="Объёмный">Объёмный</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Профиль шкафа : " data-main-value="Скрытый">Скрытый</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Профиль шкафа : " data-main-value="Затрудняюсь">Затрудняюсь</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Из какого материала вы бы хотели
+                    двери шкафа?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="Материал шкафа : " data-main-value="ЛДСП">ЛДСП</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Материал шкафа : " data-main-value="МДФ">МДФ</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Материал шкафа : " data-main-value="Пластик">Пластик</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Материал шкафа : " data-main-value="Эмаль">Эмаль</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Материал шкафа : " data-main-value="Другое">Другое</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Укажите приблизительные размеры шкафа</div>
+                <div class="quiz-item__ans-wrapper">
+                    <input type="text" data-prefix="Размеры шкафа: " data-main-value="" class="quiz-item-ans__input second-ans" placeholder=" Укажите размер ">
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Выберите фурнитуру:</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="Фурнитура шкафа : " data-main-value="Стандарт">Стандарт</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Фурнитура шкафа : " data-main-value="Премиум ">Премиум </div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Какое наполнение вас интересует? </div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="Наполнение шкафа : " data-main-value="Стандартное">Стандартное</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Наполнение шкафа : " data-main-value="Индвидуальное ">Индвидуальное </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="Наполнение шкафа : " data-main-value="Еще не решил(а) ">Еще не решил(а) </div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Планируете ли шкаф с антресольной частью?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="антресольной частью : " data-main-value="Да">Да</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="антресольной частью : " data-main-value="Нет ">Нет </div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Какую выберете подсветку?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="подсветка шкафа : " data-main-value="Вертикальная">Вертикальная</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="подсветка шкафа : " data-main-value="Горизонтальная ">Горизонтальная </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="подсветка шкафа : " data-main-value="Включатель ">Включатель </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="подсветка шкафа : " data-main-value="Датчик движения ">Датчик движения </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="подсветка шкафа : " data-main-value="Сенсор ">Сенсор </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="подсветка шкафа : " data-main-value="Без подсветки ">Без подсветки </div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Кроме шкафа, что ещё планируется
+                    в комплекте?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="кроме шкафа : " data-main-value="Тумба">Тумба</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="кроме шкафа : " data-main-value="Реечная панель">Реечная панель</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="кроме шкафа : " data-main-value="Столешница">Столешница</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="кроме шкафа : " data-main-value="Входная зона">Входная зона</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="кроме шкафа : " data-main-value="Пенал">Пенал</div>
+                    <div class="quiz-item__ans second-ans another" data-prefix="кроме шкафа : " data-main-value="Не интересует">Не интересует</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Есть ли фото шкафа который Вам нравится или дизайн-проект?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="фото или дизайн проект шкафа : " data-main-value="Есть дизайн-проект">Есть дизайн-проект</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="фото или дизайн проект шкафа : " data-main-value="Есть фото">Есть фото</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="фото или дизайн проект шкафа : " data-main-value="Ещё нет">Ещё нет</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Когда вы планируете установить шкаф?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="когда установка шкафа : " data-main-value="В этом месяце">В этом месяце</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="когда установка шкафа : " data-main-value="В следующем месяце">В следующем месяце</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="когда установка шкафа : " data-main-value="В течение 3 месяцев">В этом месяце</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="когда установка шкафа : " data-main-value="В течение 4 месяцев">В течение 4 месяцев</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="когда установка шкафа : " data-main-value="В течение 6 месяцев">В течение 6 месяцев</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">В какую сумму планируете уложиться?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="цена шкафа : " data-main-value="От 100 т.р. до 150 т.р. ">От 100 т.р. до 150 т.р. </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="цена шкафа : " data-main-value="От 150 т.р. до 200 т.р.">От 150 т.р. до 200 т.р.</div>
+                    <div class="quiz-item__ans second-ans" data-prefix="цена шкафа : " data-main-value="От 200 т.р. до 250 т.р. выше">От 200 т.р. до 250 т.р. выше</div>
+                </div>
+            </div>
+            <div class="quiz-modal-item" data-vid="shkaf">
+                <div class="quiz-item__heading">Уже готовим расчет цены для Вас!
+                    Скажите, куда вам прислать расчёт стоимости ?</div>
+                <div class="quiz-item__ans-wrapper">
+                    <div class="quiz-item__ans second-ans" data-prefix="куда отправить информацию : " data-main-value="WhatsApp ">WhatsApp </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="куда отправить информацию : " data-main-value="Telegram ">Telegram </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="куда отправить информацию : " data-main-value="Viber ">Viber </div>
+                    <div class="quiz-item__ans second-ans" data-prefix="куда отправить информацию : " data-main-value="На мобильный телефон ">На мобильный телефон </div>
+                </div>
+            </div>
+            <div class="quiz-modal-item last" data-vid="all">
+                <div class="quiz-item__heading">Чтобы сделать заказ, укажите телефон</div>
+                <p class="quiz-modal-item__text">Мы перезвоним вам в течение часа</p>
+                <div class="quiz-item__ans-wrapper">
+                    <label class="quiz-item-last-lable">
+                        <svg class="quiz-item-last-phone-svg" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.5327 10.6676C27.9994 14.1343 13.8661 28.4009 10.6661 34.8009C7.06608 41.6009 7.33275 46.1343 11.3327 50.1343C15.1994 54.0009 16.2661 53.6009 20.7994 46.4009C23.8661 41.6009 23.9994 40.6676 22.5327 37.0676C21.1994 33.7343 21.3327 32.6676 23.5994 29.6009C24.9327 27.7343 27.7327 24.9343 29.5994 23.6009C32.6661 21.3343 33.7327 21.2009 37.0661 22.5343C40.6661 24.0009 41.5994 23.8676 46.3994 20.8009C53.5994 16.2676 53.9994 15.2009 50.1327 11.3343C46.1327 7.33426 41.1994 7.0676 34.5327 10.6676Z" fill="black" />
+                        </svg>
+                        <input type="text" data-prefix="Мебель, которая интересует: " data-main-value="" class="quiz-item-ans__input" placeholder="8 (3452) 55-13-15">
+                    </label>
+                    
+                    <button class="quiz-item__ans">Сделать заказ</button>
+                </div>
+            </div>
+        </div>
+        <div class="closeModal"></div>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
